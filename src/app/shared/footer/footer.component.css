@@ -7,7 +7,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 40px;
-  margin: 0 auto;
+  margin: 0 auto; 
   flex-wrap: wrap;
   background-color: #ece9e9;
 }

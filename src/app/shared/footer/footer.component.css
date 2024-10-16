@@ -7,7 +7,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 40px;
-  margin: 0 auto; 
+  margin: 0 auto;
   flex-wrap: wrap;
   background-color: #ece9e9;
 }
@@ -60,6 +60,7 @@ footer {
 }
 
 .container-logo .logo {
+  filter: drop-shadow(0 0 10px #a2314a);
   margin-right: 10px;
   width: 110px;
 }

@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f4f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-logo {
+  width: 300px;
+  padding-left: 50px;
+}
+
+.container-logo img {
+  width: 80%;
+  cursor: pointer;
+}
+
+.container-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-opciones {
+  padding-right: 20px;
+}
+
+.container-opciones ul {
+  display: flex;
+  padding: 10px;
+  gap: 40px;
+}
+
+.container-opciones ul li a {
+  font-size: 20px;
+  color: #a2314a;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.container-opciones ul li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ca566f;
+  transition: 0.3s;
+}
+
+.container-opciones ul li a:hover::before {
+  width: 100%;
+}
+
+.container-opciones ul li a:hover {
+  text-shadow: 1px 1px 2px #f8dfe8, 0 0 2em #a2314a, 0 0 0.2em #a2314a;
+  color: #a2314a;
+}

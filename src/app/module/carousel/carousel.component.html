@@ -1,1 +1,34 @@
-<p>carousel works!</p>
+<div class="container-carousel" *ngIf="imagenes && imagenes.length > 0">
+  <img
+    *ngFor="let imagen of imagenes; let i = index"
+    [src]="imagen.imagenSrc"
+    [alt]="imagen.imagenAlt"
+    [ngClass]="{ 'imagen-active': seleccionarIndex === i }"
+    class="desvanecer"
+  />
+
+  <div *ngIf="indicatores" class="container-carousel-dot">
+    <span
+      *ngFor="let dot of imagenes; let i = index"
+      class="dot"
+      [ngClass]="{ active: seleccionarIndex === i }"
+      (click)="seleccionarImagen(i)"
+    ></span>
+  </div>
+
+  <button
+    *ngIf="controles"
+    class="botones-carousel btn-arraw"
+    (click)="cambiarImagenAdelante()"
+  >
+    <i class="material-icons arraw">arrow_back_ios</i>
+  </button>
+
+  <button
+    *ngIf="controles"
+    class="botones-carousel btn-next"
+    (click)="cambiarImagenAtras()"
+  >
+    <i class="material-icons next">arrow_back_ios</i>
+  </button>
+</div>

@@ -5,6 +5,10 @@
   align-items: center;
   background-color: #f8f4f5;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .container-logo {
